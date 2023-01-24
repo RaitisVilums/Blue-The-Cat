@@ -1,0 +1,24 @@
+.logo-wrapper {
+  width: 9rem;
+  height: 10rem;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: -2rem;
+  right: 15rem;
+  transform: rotateY(10deg);
+}
+
+.paw {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  background: url("../../Assets/paw-svgrepo-com.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
+}

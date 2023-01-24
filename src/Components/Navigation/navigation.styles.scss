@@ -1,0 +1,74 @@
+.navigation {
+  width: 50rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1.4rem;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "</nav>";
+    position: absolute;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 0.8rem;
+    top: 0;
+    right: 0;
+  }
+  &::before {
+    content: "<nav>";
+    position: absolute;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 0.8rem;
+    bottom: 0;
+    left: 0;
+  }
+
+  &-item {
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+
+    &:hover {
+      transform: skewY(2deg);
+      color: red;
+    }
+
+    &::after {
+      content: "</li>";
+      display: grid;
+      place-content: center;
+      text-transform: lowercase;
+      font-size: 0.8rem;
+      font-weight: 200;
+      font-style: italic;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 2rem;
+      height: 2rem;
+    }
+
+    &::before {
+      content: "<li>";
+      display: grid;
+      place-content: center;
+      text-transform: lowercase;
+      font-size: 0.8rem;
+      font-weight: 200;
+      font-style: italic;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  //   height: 8rem;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &-heading {
+    display: grid;
+    margin-top: 4rem;
+    margin-left: 20rem;
+    padding: 1rem;
+    place-content: center;
+    font-size: 1.6rem;
+    border: 5px dotted rgb(173, 45, 173);
+    border-radius: 20rem;
+  }
+}

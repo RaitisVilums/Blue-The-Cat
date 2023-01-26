@@ -19,6 +19,8 @@
 .image-container {
   width: 20rem;
   height: 30rem;
+  border-radius: 5rem;
+  border: 2px solid white;
 
   & img {
     width: 100%;
@@ -35,10 +37,6 @@
   cursor: pointer;
   background: transparent;
   border: 1px solid transparent;
-
-  &:hover {
-    border: 1px solid black;
-  }
 
   &-prev {
     background: url("../../Assets/arrow-left-2-svgrepo-com.svg");

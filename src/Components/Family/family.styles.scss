@@ -15,7 +15,7 @@
   &-wrapper {
     display: grid;
     grid-template-columns: repeat(2, minmax(20rem, 1fr));
-    gap: 10rem;
+    gap: 5rem;
     background: rgb(227, 174, 238);
     box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
     padding: 2rem;
@@ -25,13 +25,14 @@
   &-wrapper-image {
     width: 30rem;
     height: 40rem;
-    border-radius: 10rem;
+    border-radius: 5rem;
+    border: 5px solid white;
     margin-bottom: 1rem;
 
     & img {
       width: 100%;
       height: 100%;
-      border-radius: 10rem;
+      border-radius: 5rem;
     }
   }
   &-wrapper-description {

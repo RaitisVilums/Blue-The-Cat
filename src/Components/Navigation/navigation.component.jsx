@@ -2,7 +2,7 @@ import "./navigation.styles.scss";
 
 const Navigation = () => {
   return (
-    <nav className="navigation">
+    <nav id="navigation" className="navigation">
       <a href="#home" className="navigation-item">
         home
       </a>

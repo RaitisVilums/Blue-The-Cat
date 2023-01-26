@@ -1,0 +1,10 @@
+.gallery-wrapper-big {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(20rem, 1fr));
+  gap: 1rem;
+  position: relative;
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  background: rgb(227, 174, 238);
+  border-radius: 5rem;
+}

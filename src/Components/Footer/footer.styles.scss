@@ -1,0 +1,46 @@
+.footer {
+  margin-top: 2rem;
+  display: flex;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid black;
+  overflow: hidden;
+
+  &-credentials {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+    & h1 {
+      font-size: 2.6rem;
+      font-weight: 500;
+
+      & a {
+        font-size: inherit;
+      }
+    }
+
+    & a {
+      text-decoration: underline;
+      font-size: 1.8rem;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .footer {
+    &-credentials {
+      gap: 2rem;
+
+      & h1 {
+        font-size: 1.8rem;
+      }
+
+      & a {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

@@ -3,7 +3,8 @@ import About from "./Components/About/about.component";
 import Header from "./Components/Header/header.component";
 import Home from "./Components/Home/home.component";
 import Gallery from "./Components/Gallery/gallery.component";
-import Contacts from "./Components/Contacts/contacts.component";
+import Family from "./Components/Family/family.component";
+import Footer from "./Components/Footer/footer.component";
 import { Fragment } from "react";
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
       <Home />
       <About />
       <Gallery />
-      <Contacts />
+      <Family />
+      <Footer />
     </Fragment>
   );
 }

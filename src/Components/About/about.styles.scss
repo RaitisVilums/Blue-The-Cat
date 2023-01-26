@@ -2,14 +2,6 @@
   padding: 4rem;
   display: grid;
   place-items: center;
-
-  &-heading {
-    margin-bottom: 4rem;
-    & h1 {
-      font-size: 2.8rem;
-      font-weight: 400;
-    }
-  }
 }
 
 .wrapper {
@@ -29,7 +21,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin-left: 7rem;
+    margin-left: 8.5rem;
     // background: #000;
     width: 20rem;
     height: 30rem;
@@ -51,7 +43,6 @@
   &-aboutme {
     display: flex;
     flex-direction: column;
-    // padding-top: 6rem;
     align-items: center;
     justify-content: center;
   }
@@ -78,11 +69,11 @@
 .aboutme {
   &-heading {
     font-size: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 
     &-span {
       font-size: 1.6rem;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -91,3 +82,76 @@
     font-size: 1.3rem;
   }
 }
+
+@media (max-width: 1000px) {
+  .wrapper {
+    &-image {
+      margin-left: 5rem;
+    }
+    &-aboutme {
+      margin-top: 5rem;
+      display: inline;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .wrapper {
+    &-image {
+      margin-left: 2rem;
+    }
+  }
+
+  .aboutme-heading {
+    font-size: 1.8rem;
+
+    &-span {
+      font-size: 1.4rem;
+    }
+  }
+  .aboutme-para {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(20rem, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    &-image {
+      margin-left: 0rem;
+      justify-self: center;
+      grid-row: 1;
+    }
+
+    &-aboutme {
+      margin-top: 0;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  }
+
+  .aboutme-heading {
+    margin-top: 0;
+    font-size: 1.8rem;
+
+    &-span {
+      font-size: 1.4rem;
+    }
+  }
+  .aboutme-para {
+    font-size: 1.2rem;
+  }
+}
+
+// @media (max-width: 800px) {
+// }
+// @media (max-width: 500px) {
+// }
+
+// @media (max-width: 390px) {
+// }

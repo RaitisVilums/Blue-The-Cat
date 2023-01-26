@@ -12,8 +12,8 @@ const Navigation = () => {
       <a href="#gallery" className="navigation-item">
         gallery
       </a>
-      <a href="#contacts" className="navigation-item">
-        contacts
+      <a href="#family" className="navigation-item">
+        family
       </a>
     </nav>
   );

@@ -1,46 +1,33 @@
 import "./gallery.styles.scss";
-import { images } from "../DummyData/DUMMY_DATA";
-import { useState } from "react";
+import GalleryBig from "./gallery-big.component";
+import GallerySmall from "./gallery-small.component";
+import { useState, useEffect } from "react";
 
 const Gallery = () => {
-  const [currentGroup, setCurrentGroup] = useState(0);
-
-  const onClickPrev = () => {
-    if (currentGroup === 0) {
-      setCurrentGroup(Math.floor(images.length / 3));
-    } else {
-      setCurrentGroup(currentGroup - 1);
+  const [width, setWidth] = useState(0);
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setWidth(window.innerWidth);
+      window.addEventListener("resize", handleResize);
     }
-  };
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
-  const onClickNext = () => {
-    if (currentGroup === Math.floor(images.length / 3)) {
-      setCurrentGroup(0);
-    } else {
-      setCurrentGroup(currentGroup + 1);
-    }
-  };
+  function handleResize() {
+    setWidth(window.innerWidth);
+  }
 
   return (
     <section id="gallery" className="gallery">
-      <div className="gallery-heading">
+      <div className="heading">
         <h1>Gallery</h1>
+      </div>
+      <div className="gallery-heading">
         <h2>These are my everyday moods!</h2>
       </div>
-
-      <div className="gallery-wrapper">
-        <button onClick={onClickPrev} className="btn btn-prev"></button>
-        <div className="image-container">
-          <img src={images[currentGroup * 3]} alt="" />
-        </div>
-        <div className="image-container">
-          <img src={images[currentGroup * 3 + 1]} alt="" />
-        </div>
-        <div className="image-container">
-          <img src={images[currentGroup * 3 + 2]} alt="" />
-        </div>
-        <button onClick={onClickNext} className="btn btn-next"></button>
-      </div>
+      {width > 750 ? <GalleryBig /> : <GallerySmall />}
     </section>
   );
 };

@@ -6,7 +6,7 @@ const Home = () => {
     <section id="home" className="home">
       <div className="home-aside-left" />
       <div className="home-aside-rigth" />
-      <div className="home-heading">
+      <div className="heading">
         <h1>My name is Blue</h1>
       </div>
       <div className="home-image">

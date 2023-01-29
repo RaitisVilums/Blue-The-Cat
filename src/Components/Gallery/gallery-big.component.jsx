@@ -7,14 +7,13 @@ const GalleryBig = () => {
 
   const onClickPrev = () => {
     if (currentGroup === 0) {
-      setCurrentGroup(Math.floor(images.length / 3));
+      setCurrentGroup(Math.ceil(images.length / 3) - 1);
     } else {
       setCurrentGroup(currentGroup - 1);
     }
   };
-
   const onClickNext = () => {
-    if (currentGroup === Math.floor(images.length / 3)) {
+    if (currentGroup === Math.ceil(images.length / 3) - 1) {
       setCurrentGroup(0);
     } else {
       setCurrentGroup(currentGroup + 1);

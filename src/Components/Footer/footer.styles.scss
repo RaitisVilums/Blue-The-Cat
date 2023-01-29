@@ -33,11 +33,12 @@
 @media (max-width: 800px) {
   .footer {
     padding: 0;
+    margin-bottom: 2rem;
     &-credentials {
       gap: 2rem;
 
       & h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
 
       & a {

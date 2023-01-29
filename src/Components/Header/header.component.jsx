@@ -6,8 +6,10 @@ const Header = () => {
   return (
     <header className="header">
       <Navigation />
-      <div className="header-heading">Hello and Welcome!</div>
-      <Logo />
+      <div className="header-heading">
+        Hello and Welcome!
+        <Logo />
+      </div>
     </header>
   );
 };

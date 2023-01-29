@@ -1,56 +1,14 @@
-.logo-wrapper {
-  width: 9rem;
-  height: 10rem;
-  position: relative;
-}
-
 .logo {
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: -2rem;
-  right: 20rem;
+  width: 9rem;
+  bottom: 1rem;
+  right: -1rem;
   transform: rotateY(10deg);
 }
 
-@media (max-width: 1440px) {
-  .logo {
-    right: 30rem;
-  }
-}
-
-@media (max-width: 1000px) {
-  .logo {
-    right: 10rem;
-  }
-}
-
 @media (max-width: 800px) {
-  .logo-wrapper {
-    width: 8rem;
-    height: 9rem;
-  }
-
   .logo {
-    top: -1rem;
-    right: 8rem;
+    width: 6rem;
     transform: rotateY(0deg);
   }
-}
-@media (max-width: 500px) {
-  .logo-wrapper {
-    position: absolute;
-    width: 10rem;
-    height: 11rem;
-    top: 8rem;
-    left: 23rem;
-  }
-
-  .logo {
-    top: 0rem;
-    left: 0rem;
-  }
-}
-
-@media (max-width: 390px) {
 }
